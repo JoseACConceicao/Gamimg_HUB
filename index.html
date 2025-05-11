@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.5/lib/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <header>
+      <h1>HUB de Jogos</h1>
+      <p class="description">Uma coleção de jogos clássicos desenvolvidos com p5.js</p>
+    </header>
+
+    <div class="container">
+      <div class="game-cards left">
+        <div class="game-card" id="galo">
+          <h2>Jogo do Galo</h2>
+          <div class="game-info">
+            <h3>Regras</h3>
+            <ul>
+              <li>Jogo para dois jogadores</li>
+              <li>Alternadamente, marque X ou O em uma casa vazia</li>
+              <li>Primeiro a alinhar 3 símbolos vence</li>
+            </ul>
+            <h3>Controles</h3>
+            <ul>
+              <li>Clique em uma casa para marcar</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="game-card" id="flappy">
+          <h2>Flappy Bird</h2>
+          <div class="game-info">
+            <h3>Regras</h3>
+            <ul>
+              <li>Evite colidir com os canos</li>
+              <li>Passe pelos espaços entre os canos</li>
+              <li>Cada passagem vale 1 ponto</li>
+            </ul>
+            <h3>Controles</h3>
+            <ul>
+              <li>J: Pular</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="game-card" id="mineswiper">
+          <h2>MineSwiper</h2>
+          <div class="game-info">
+            <h3>Regras</h3>
+            <ul>
+              <li>Revele todas as casas sem minas</li>
+              <li>Números indicam minas adjacentes</li>
+              <li>Evite clicar nas minas!</li>
+            </ul>
+            <h3>Controles</h3>
+            <ul>
+              <li>Clique para revelar</li>
+              <li>Coloque o cursor sobre uma casa e pressione a tecla 'f' para marcar</li>
+            </ul>
+          </div>
+        </div>
+        <div class="game-card school-card">
+          <h2>Escola Secundária de Anadia</h2>
+          <div class="game-info">
+            <a href="https://aeanadia.pt/" target="_blank" class="school-link">
+              <img src="assets/logo1.png" alt="Logotipo da Escola" />
+              <span>Visitar o site da escola</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="center-content">
+        <div class="canvas-container">
+          <div class="canvas-overlay">
+            <div class="overlay-content">
+              <h2>HUB de Jogos</h2>
+              <p>Clique para começar a jogar</p>
+              <div class="overlay-icon">🎮</div>
+            </div>
+          </div>
+          <main>
+            <!-- Canvas will be inserted here by p5.js -->
+          </main>
+        </div>
+
+        <div class="general-controls">
+          <h2>Controles Gerais</h2>
+          <ul>
+            <li>W: Mover para cima</li>
+            <li>S: Mover para baixo</li>
+            <li>A: Mover para esquerda</li>
+            <li>D: Mover para direita</li>
+            <li>ESC: Voltar ao menu principal</li>
+            <li>P: Pausar jogo atual</li>
+            <li>R: Reiniciar jogo atual</li>
+          </ul>
+        </div>
+
+        <!-- Temporarily commented out tips section
+        <div class="tips-section">
+          <h2>Dicas e Truques</h2>
+          <div class="tips-grid">
+            <div class="tip-card">
+              <h3>Flappy Bird</h3>
+              <p>Mantenha um ritmo constante de pulos e tente manter o pássaro na altura média dos canos.</p>
+            </div>
+            <div class="tip-card">
+              <h3>MineSwiper</h3>
+              <p>Comece pelos cantos e use os números para deduzir a posição das minas. Marque as casas seguras!</p>
+            </div>
+            <div class="tip-card">
+              <h3>Jogo da Memória</h3>
+              <p>Concentre-se em memorizar a posição das cartas e tente formar pares em sequência.</p>
+            </div>
+            <div class="tip-card">
+              <h3>Wortle</h3>
+              <p>Comece com palavras que contenham vogais comuns e use as dicas de cores para eliminar opções.</p>
+            </div>
+          </div>
+        </div>
+        -->
+
+        <div class="project-description">
+          <h2>Sobre o Projeto</h2>
+          <div class="description-content">
+            <p>Este HUB de Jogos é um projeto escolar desenvolvido no âmbito da disciplina de Aplicações Informáticas B, que reúne uma coleção de jogos clássicos implementados usando a biblioteca p5.js.</p>
+            <p>O projeto visa demonstrar a aplicação prática de conceitos de programação e design de interfaces, oferecendo uma experiência interativa e educativa através de jogos conhecidos e apreciados por todos.</p>
+            <div class="tech-stack">
+              <h3>Tecnologias Utilizadas</h3>
+              <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript</li>
+                <li>p5.js</li>
+                <li>Git & GitHub</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-cards right">
+        <div class="game-card" id="memoria">
+          <h2>Jogo da Memória</h2>
+          <div class="game-info">
+            <h3>Regras</h3>
+            <ul>
+              <li>Encontre os pares de cartas</li>
+              <li>Você pode virar duas cartas por vez</li>
+              <li>Complete todos os pares para vencer</li>
+            </ul>
+            <h3>Controles</h3>
+            <ul>
+              <li>Clique nas cartas para virar</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="game-card" id="cobra">
+          <h2>Jogo da Cobra</h2>
+          <div class="game-info">
+            <h3>Regras</h3>
+            <ul>
+              <li>Coma as maçãs para crescer</li>
+              <li>Evite colidir com as paredes</li>
+              <li>Evite colidir com seu próprio corpo</li>
+            </ul>
+            <h3>Controles</h3>
+            <ul>
+              <li>W: Mover para cima</li>
+              <li>S: Mover para baixo</li>
+              <li>A: Mover para esquerda</li>
+              <li>D: Mover para direita</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="game-card" id="wortle">
+          <h2>Wortle</h2>
+          <div class="game-info">
+            <h3>Regras</h3>
+            <ul>
+              <li>Adivinhe a palavra em 6 tentativas</li>
+              <li>Verde: letra correta na posição certa</li>
+              <li>Amarelo: letra correta na posição errada</li>
+            </ul>
+            <h3>Controles</h3>
+            <ul>
+              <li>Digite os caracteres da palavra de 5 letras portuguesa que tem em mente</li>
+              <li>ENTER para confirmar</li>
+            </ul>
+          </div>
+        </div>
+        <div class="game-card github-card">
+          <h2>Repositório do Projeto</h2>
+          <div class="game-info">
+            <a href="https://github.com/your-repo-link" target="_blank" class="github-link">
+              <svg viewBox="0 0 24 24" class="github-icon">
+                <path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              <span>Acessar o código fonte</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <p>Desenvolvido por: José Conceição, nº 9, e Tomás Ibérico, nº 19, do 12º C</p>
+        <span class="footer-divider">•</span>
+        <p>Professores Orientadores: Rosa Cruz, Catarina Simões e Nuno Conde</p>
+        <span class="footer-divider">•</span>
+        <p>Projeto Final - Aplicações Informáticas B</p>
+        <span class="footer-divider">•</span>
+        <p>Ano Letivo 2024-2025</p>
+      </div>
+    </footer>
+
+    <script src="sketch.js"></script>
+    <script src="variaveis.js"></script>
+    <script src="palavras.js"></script>
+    <script src="classes.js"></script>
+    <script src="menu.js"></script>
+    <script src="memoria.js"></script>
+    <script src="galo.js"></script>
+    <script src="flappyBird.js"></script>
+    <script src="mineSwipper.js"></script>
+    <script src="cobra.js"></script>
+    <script src="wortle.js"></script>
+    <script src="flip.js"></script>
+  </body>
+</html>
