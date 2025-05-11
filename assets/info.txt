@@ -1,0 +1,1 @@
+This is the assets folder, here are the files that are needed.
