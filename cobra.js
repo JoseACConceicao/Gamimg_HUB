@@ -141,7 +141,8 @@ function desenharCobra() {
 function desenharComida() {
     fill(255, 0, 0);
     noStroke();
-    rect(comida.x, comida.y, TAMANHO_CELULA_COBRA, TAMANHO_CELULA_COBRA);
+    //rect(comida.x, comida.y, TAMANHO_CELULA_COBRA, TAMANHO_CELULA_COBRA);
+    image(cobraImg.maca, comida.x, comida.y, TAMANHO_CELULA_COBRA, TAMANHO_CELULA_COBRA)
 }
 
 // Função para gerar nova comida
