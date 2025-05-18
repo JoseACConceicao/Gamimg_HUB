@@ -92,7 +92,7 @@ function setup() {
   }
   
   //Música de fundo
-  sons.background.loop(0, 1, 0.05);
+  sons.background.loop(0, 1, 0.02);
 }
 
 function draw() {
