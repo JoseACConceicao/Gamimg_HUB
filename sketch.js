@@ -31,6 +31,7 @@ function preload() {
   wortle = loadImage('assets/wortle/logo.png');
   cobraImg = {
     logo: loadImage('assets/cobra/logo_cobra.png'),
+    maca: loadImage('assets/cobra/maça1.png'),
   };
   flappyImg = {
     logo: loadImage('assets/flappyBird/bird.png'),
